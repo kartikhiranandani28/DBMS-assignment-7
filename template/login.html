@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #ff6a6a, #ffcc6a);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 {
+            color: #ff6a6a;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-control {
+            border-radius: 10px;
+        }
+        .btn-login {
+            background: #ff6a6a;
+            color: white;
+            border-radius: 10px;
+        }
+        .btn-login:hover {
+            background: #ffcc6a;
+            color: white;
+        }
+        .btn-new-user {
+            background: transparent;
+            color: #ff6a6a;
+            border: 2px solid #ff6a6a;
+            border-radius: 10px;
+            margin-top: 10px;
+            display: block;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .btn-new-user:hover {
+            background: #ff6a6a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Login</h2>
+        <form action="/signin/" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" name="username" id="username" aria-label="Username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" id="password" aria-label="Password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn btn-login btn-block">Login</button>
+            <a href="/signup/" class="btn-new-user btn-block">New User</a>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
