@@ -1,1 +1,1 @@
-this a project created with django
+This is a project created with django
