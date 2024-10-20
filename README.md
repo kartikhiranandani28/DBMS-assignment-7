@@ -1,4 +1,7 @@
 This is a project created with django
+
+
+
 ![IMG-20241020-WA0005 1](https://github.com/user-attachments/assets/9183b6b8-cabd-4778-be61-bf5ffa0b0b8e)
 ![Screenshot (129)](https://github.com/user-attachments/assets/bea121b3-8f94-452a-b33e-1306285a07ca)
 ![Screenshot (130)](https://github.com/user-attachments/assets/6b2b57eb-f2e3-4090-83a1-f0098b0f701a)
